@@ -7,7 +7,7 @@ const rendererProcessConfig: Configuration = {
   target: 'electron-renderer',
   entry: path.resolve(__dirname, '../src/renderer/index.ts'),
   output: {
-    path: path.resolve(__dirname, '../dist/renderer'),
+    path: path.resolve(__dirname, '../bundled/renderer'),
     filename: 'index.bundle.js',
   },
   resolve: {

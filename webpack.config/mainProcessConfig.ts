@@ -6,7 +6,7 @@ const mainProcessConfig: Configuration = {
   target: 'electron-main',
   entry: path.resolve(__dirname, '../src/main/index.ts'),
   output: {
-    path: path.resolve(__dirname, '../dist/'),
+    path: path.resolve(__dirname, '../bundled/'),
     filename: 'main.bundle.js',
   },
   resolve: {

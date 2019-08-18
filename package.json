@@ -1,7 +1,14 @@
 {
-  "main": "src/main.js",
+  "name": "electron-builder--typescript-webpack-package-mac-demo",
+  "description": "electron-builder--typescript-webpack-package-mac-demo",
+  "version": "1.0.0",
+  "main": "bundled/main.bundle.js",
+  "index": "bundled/main.bundle.js",
   "scripts": {
-    "demo": "webpack && electron ./dist/main.bundle.js"
+    "dist": "rm -rf bundled && webpack && electron-builder --mac"
+  },
+  "build": {
+    "appId": "electron-builder--typescript-webpack-package-mac-demo"
   },
   "dependencies": {},
   "devDependencies": {
@@ -9,7 +16,8 @@
     "@types/node": "8.9.5",
     "@types/webpack": "4.4.34",
     "css-loader": "3.2.0",
-    "electron": "6.0.1",
+    "electron": "6.0.2",
+    "electron-builder": "21.2.0",
     "html-webpack-plugin": "4.0.0-beta.5",
     "style-loader": "1.0.0",
     "ts-loader": "6.0.4",
